@@ -1,5 +1,5 @@
 <StackLayout #container>
-  <Label [text]="appName" class="app-name">
+  <Label text="Liszt" class="app-name">
 
   </Label>
   <TextField #email hint="Email Address" keyboardType="email"
@@ -7,10 +7,8 @@
   </TextField>
   <TextField #password hint="Password" secure="true"></TextField>
 
-  <Button [text]="isLoggingIn ? 'Sign in' : 'Sign up'" 
-    class="submit-button" (tap)="submit()">
+  <Button text="Sign in" class="sign-in-button login-button">
   </Button>
-  <Button [text]="isLoggingIn ? 'Sign up' : 'Back to login'" 
-    (tap)="toggleDisplay()">
+  <Button text="Sign up" class="sign-up-button login-button">
   </Button>
 </StackLayout>

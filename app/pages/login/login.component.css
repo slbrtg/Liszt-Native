@@ -18,7 +18,11 @@ Button, TextField {
   margin-bottom: 15;
 }
 
-.submit-button {
+.button {
+  text-transform: lowercase;
+}
+
+.sign-in-button {
   background-color: rgba(0, 225, 255, 0.856);
   color: white;
   margin-top: 10;

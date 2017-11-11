@@ -6,14 +6,14 @@ import { Color } from "tns-core-modules/color";
 import { View } from "tns-core-modules/ui/core/view";
 
 @Component({
-		selector: "my-app",
+	selector: "login",
     templateUrl:'./pages/login/login.component.html',
     styleUrls: ["pages/login/login.component.css"]
 })
 export class LoginComponent implements OnInit {
-		// Properties
-		appName: string = "Liszt";
-    isLoggingIn: boolean = true;
+	// UI Properties
+    appName: string = "Liszt";
+    signUp: string = "Sign up";
 
     @ViewChild("container") container: ElementRef;
     @ViewChild("email") email: ElementRef;
@@ -26,11 +26,6 @@ export class LoginComponent implements OnInit {
 
     ngOnInit() {
         this.page.actionBarHidden = true;
-    }
-
-
-    toggleDisplay() {
-        this.isLoggingIn = !this.isLoggingIn;
     }
 
 }
