@@ -1,15 +1,13 @@
 <StackLayout #container>
-  <Label text="Liszt" class="app-name">
+  <Label text="Liszt" class="app-name"></Label>
 
-  </Label>
   <TextField #email hint="Email Address" keyboardType="email"
     autocorrect="false" autocapitalizationType="none">
   </TextField>
   <TextField #password hint="Password" secure="true"></TextField>
+  <TextField #password hint="Confirm Password" secure="true"></TextField>
 
-  <Button text="Sign in" class="sign-in-button login-button">
-  </Button>
-  <Label text="sign up" class="sign-up-button login-button"
+  <Button text="Sign up" class="sign-up-button login-button"
   [nsRouterLink]="['/signup']">
-  </Label>
+  </Button>
 </StackLayout>

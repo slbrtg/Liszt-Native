@@ -3,11 +3,11 @@ import { Routes } from "@angular/router";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 
 import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
 
 const routes: Routes = [
-    { path: "", redirectTo: "/login", pathMatch: "full" },
-    { path: "login", component: LoginComponent},
-    { path: "home", loadChildren: "./home/home.module#HomeModule" }
+    { path: "", component: LoginComponent },
+    { path: "signup", component: SignupComponent}
 ];
 
 @NgModule({
