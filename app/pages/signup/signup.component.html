@@ -7,7 +7,10 @@
   <TextField #password hint="Password" secure="true"></TextField>
   <TextField #password hint="Confirm Password" secure="true"></TextField>
 
-  <Button text="Sign up" class="sign-up-button login-button"
+  <Button text="Sign up" class="sign-up-button"
   [nsRouterLink]="['/signup']">
   </Button>
+  <Label text="back to login" class="back-to-login-button"
+         [nsRouterLink]="['/login']">
+  </Label>
 </StackLayout>

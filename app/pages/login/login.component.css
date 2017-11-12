@@ -1,37 +1,23 @@
 StackLayout {
-  margin-left: 30;
-  margin-right: 30;
-  margin-top: 125;
-  padding-bottom: 15;
-  background-color: white;
-}
-
-.app-name {
-  font-size: 50sp;
-  margin-left: 27;
-  margin-bottom: 35;
-  /* color:  rgb(250, 134, 179); */
+    margin-left: 30;
+    margin-right: 30;
+    margin-top: 125;
+    padding-bottom: 15;
+    background-color: white;
 }
 
 Button, TextField {
-  margin-left: 16;
-  margin-right: 16;
-  margin-bottom: 15;
+    margin-left: 16;
+    margin-right: 16;
+    margin-bottom: 15;
 }
 
 .button {
-  text-transform: lowercase;
+    text-transform: lowercase;
 }
 
 .sign-in-button {
-  background-color: rgba(0, 225, 255, 0.856);
-  color: white;
-  margin-top: 10;
-}
-
-.sign-up-button {
-  font-size: 25sp;
-  margin-left: 105;
-  margin-top: 10;
-  /* color:  rgb(250, 134, 179); */
+    background-color: rgba(0, 225, 255, 0.856);
+    color: white;
+    margin-top: 10;
 }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>697371703092-slvlbg4926s0fmuef7o9bhl2hvu8rlec.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.697371703092-slvlbg4926s0fmuef7o9bhl2hvu8rlec</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAlV18kV6m2Tw1pVBAeh5eXXHUYFJWQ_3I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>697371703092</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.doghat.liszt</string>
+	<key>PROJECT_ID</key>
+	<string>liszt-native</string>
+	<key>STORAGE_BUCKET</key>
+	<string>liszt-native.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:697371703092:ios:bef617a5d0258209</string>
+	<key>DATABASE_URL</key>
+	<string>https://liszt-native.firebaseio.com</string>
+</dict>
+</plist>

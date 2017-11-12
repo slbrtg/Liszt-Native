@@ -1,6 +1,6 @@
 {
 	"name": "Liszt",
-	"version": "0.1",
+	"version": "0.1.0",
 	"description": "Liszt: task management for the home",
 	"license": "SEE LICENSE IN <your-license-filename>",
 	"readme": "NativeScript Application",
@@ -9,6 +9,9 @@
 		"id": "com.doghat.liszt",
 		"tns-android": {
 			"version": "3.3.1"
+		},
+		"tns-ios": {
+			"version": "3.3.0"
 		}
 	},
 	"dependencies": {
