@@ -4,7 +4,7 @@ import { Page } from "tns-core-modules/ui/page";
 
 @Component({
 	selector: "login",
-    templateUrl:'pages/login/login.component.html',
+    templateUrl:'pages/login/login.component.xml',
     styleUrls: ["pages/login/login.component.css", "pages/login/login.css"]
 })
 export class LoginComponent implements OnInit {

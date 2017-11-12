@@ -4,7 +4,7 @@ import { Page } from "tns-core-modules/ui/page";
 
 @Component({
 	selector: 'signup',
-	templateUrl: 'pages/signup/signup.component.html',
+	templateUrl: 'pages/signup/signup.component.xml',
 	styleUrls:["pages/signup/signup.component.css", "pages/signup/signup.css"]
 })
 
