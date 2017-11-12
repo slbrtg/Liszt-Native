@@ -1,10 +1,12 @@
 {
-	"description": "NativeScript Application",
+	"name": "Liszt",
+	"version": "0.1",
+	"description": "Liszt: task management for the home",
 	"license": "SEE LICENSE IN <your-license-filename>",
 	"readme": "NativeScript Application",
 	"repository": "<fill-your-repository-here>",
 	"nativescript": {
-		"id": "org.nativescript.Liszt",
+		"id": "com.doghat.liszt",
 		"tns-android": {
 			"version": "3.3.1"
 		}
@@ -19,6 +21,7 @@
 		"@angular/platform-browser": "4.4.6",
 		"@angular/router": "4.4.6",
 		"nativescript-angular": "4.4.1",
+		"nativescript-plugin-firebase": "^4.2.1",
 		"nativescript-theme-core": "1.0.4",
 		"reflect-metadata": "0.1.10",
 		"rxjs": "5.5.2",

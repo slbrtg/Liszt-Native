@@ -32,6 +32,6 @@ Button, TextField {
 .sign-up-button {
   font-size: 25sp;
   margin-left: 105;
-  margin-top: 50;
+  margin-top: 10;
   /* color:  rgb(250, 134, 179); */
 }
