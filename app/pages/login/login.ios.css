@@ -1,13 +1,14 @@
 .app-name {
     font-size: 50sp;
-    margin-left: 27;
+    margin-left: 25;
     margin-bottom: 35;
+    margin-top: 75;
     color:  gray;
 }
 
 .sign-up-button {
     font-size: 25sp;
-    margin-left: 87;
+    margin-left: 115;
     margin-top: 10;
     color: gray;
 }
