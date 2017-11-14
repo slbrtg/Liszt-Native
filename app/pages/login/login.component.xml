@@ -9,7 +9,7 @@
 
   <Button text="Sign in" class="sign-in-button">
   </Button>
-  <Label text="sign up" class="sign-up-button"
+  <Button text="sign up" class="sign-up-button"
   [nsRouterLink]="['/signup']">
-  </Label>
+  </Button>
 </StackLayout>

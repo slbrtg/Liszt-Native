@@ -10,7 +10,7 @@
   <Button text="Sign up" class="sign-up-button"
   [nsRouterLink]="['/signup']">
   </Button>
-  <Label text="back to login" class="back-to-login-button"
+  <Button text="back to login" class="back-to-login-button"
          [nsRouterLink]="['/login']">
-  </Label>
+  </Button>
 </StackLayout>
