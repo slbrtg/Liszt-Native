@@ -13,11 +13,5 @@ Button, TextField {
 }
 
 .button {
-    text-transform: lowercase;
-}
-
-.sign-in-button {
-    background-color: rgba(0, 225, 255, 0.856);
-    color: white;
-    margin-top: 10;
+    text-transform: capitalize;
 }

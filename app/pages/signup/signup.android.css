@@ -4,8 +4,20 @@
     margin-bottom: 35;
 }
 
-.back-to-login-button {
-    font-size: 25sp;
-    margin-left: 75;
+.sign-up-button {
+    background-color: rgba(0, 225, 255, 0.856);
+    color: white;
     margin-top: 10;
+    font-size: 20;
+    border-color: transparent;
+    border-width: 1;
+}
+
+.back-to-login-button {
+    background-color: white;
+    font-size: 20;
+    color: #808080;
+    margin-top: 10;
+    border-color: transparent;
+    border-width: 1;
 }

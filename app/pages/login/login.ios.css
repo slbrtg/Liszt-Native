@@ -6,6 +6,12 @@
     color:  gray;
 }
 
+.sign-in-button {
+    background-color: rgba(0, 225, 255, 0.856);
+    color: white;
+    margin-top: 10;
+}
+
 .sign-up-button {
     font-size: 25sp;
     margin-top: 10;

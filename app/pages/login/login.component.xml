@@ -7,9 +7,9 @@
   </TextField>
   <TextField #password hint="Password" secure="true"></TextField>
 
-  <Button text="Sign in" class="sign-in-button">
+  <Button text="Sign in" class="sign-in-button button">
   </Button>
-  <Button text="sign up" class="sign-up-button"
-  [nsRouterLink]="['/signup']">
+  <Button text="sign up" class="sign-up-button button"
+  [nsRouterLink]="['signup']">
   </Button>
 </StackLayout>

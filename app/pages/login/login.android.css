@@ -1,12 +1,24 @@
 .app-name {
-    font-size: 50sp;
+    font-size: 50;
     margin-left: 27;
     margin-bottom: 35;
 }
 
+.sign-in-button {
+    background-color: rgba(0, 225, 255, 0.856);
+    color: white;
+    margin-top: 10;
+    font-size: 20;
+    border-color: transparent;
+    border-width: 1;
+}
+
 
 .sign-up-button {
-    font-size: 25sp;
-    margin-left: 105;
+    background-color: white;
+    font-size: 20;
+    color: gray;
     margin-top: 10;
+    border-color: transparent;
+    border-width: 1;
 }
