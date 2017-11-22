@@ -20,15 +20,21 @@ export class SignupComponent implements OnInit {
 	user: User;
 
 	//////////////////////////////////////////////////////////
+    // UI Elements
+    //////////////////////////////////////////////////////////
+
+    email: string;
+	password: string;
+	confirmPassword: string;
+
+	//////////////////////////////////////////////////////////
 	// Constructor
 	//////////////////////////////////////////////////////////
 
 	constructor(private router: Router, private page: Page,
 							private firebaseService: FirebaseService,
 							private routerExtensions: RouterExtensions) {
-								this.user = new User();
-								this.user.email = "user@mail.com";
-								this.user.password = "password";
+								
 	}
 
 	//////////////////////////////////////////////////////////
@@ -44,13 +50,13 @@ export class SignupComponent implements OnInit {
 	//////////////////////////////////////////////////////////
 
 	signUp() {
-		this.firebaseService.signUp(this.user)
+		if (this.password != this.confirmPassword) { return; }
+		this.firebaseService.signUp(this.email, this.password)
 		.then(() => {
 			console.log("Attempting to register a new user");
-			this.routerExtensions.navigate([""], { clearHistory: true } )
 		})
 		.catch((message: any) => {
-			alert(message);
+			alert(message)
 		})
 	}
 

@@ -1,11 +1,11 @@
-<StackLayout #container>
+<StackLayout>
   <Label text="Liszt" class="app-name"></Label>
 
-  <TextField #email hint="Email Address" keyboardType="email"
-    autocorrect="false" autocapitalizationType="none">
+  <TextField hint="Email Address" keyboardType="email"
+    autocorrect="false" autocapitalizationType="none" [(ngModel)] = "email">
   </TextField>
-  <TextField #password hint="Password" secure="true"></TextField>
-  <TextField #password hint="Confirm Password" secure="true"></TextField>
+  <TextField hint="Password" secure="true" [(ngModel)] = "password"></TextField>
+  <TextField hint="Confirm Password" secure="true" [(ngModel)] = "confirmPassword"></TextField>
 
   <Button text="Sign up" class="sign-up-button button"
   (tap)="signUp()">

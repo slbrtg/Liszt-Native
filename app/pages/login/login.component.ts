@@ -16,6 +16,7 @@ export class LoginComponent implements OnInit {
     @ViewChild("container") container: ElementRef;
     @ViewChild("email") email: ElementRef;
     @ViewChild("password") password: ElementRef;
+    @ViewChild("confirmPassword") confirmPassword: ElementRef;
 
     //////////////////////////////////////////////////////////
     // Constructor
