@@ -1,4 +1,0 @@
-
-<!-- http://moduscreate.com/custom-components-in-nativescript/ -->
-
-<Label class="test-component" loaded="onLoaded" text="Test Component!"/>

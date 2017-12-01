@@ -1,8 +1,9 @@
+import { transition } from '@angular/animations';
 import { Component, OnInit, ElementRef, ViewChild } from "@angular/core";
-import { Router } from "@angular/router";
 import { Page } from "tns-core-modules/ui/page";
 import { User } from "../../models/user.model";
 import { FirebaseService } from "../../services/firebase.service";
+import { Router } from '@angular/router';
 import { RouterExtensions } from "nativescript-angular/router/router-extensions";
 
 @Component({
@@ -23,7 +24,7 @@ export class SignupComponent implements OnInit {
     // UI Elements
     //////////////////////////////////////////////////////////
 
-    email: string;
+  email: string;
 	password: string;
 	confirmPassword: string;
 
@@ -31,7 +32,7 @@ export class SignupComponent implements OnInit {
 	// Constructor
 	//////////////////////////////////////////////////////////
 
-	constructor(private router: Router, private page: Page,
+	constructor(private page: Page, route: Router,
 							private firebaseService: FirebaseService,
 							private routerExtensions: RouterExtensions) {
 								
@@ -49,15 +50,35 @@ export class SignupComponent implements OnInit {
 	// Sign Up Methods
 	//////////////////////////////////////////////////////////
 
-	signUp() {
-		if (this.password != this.confirmPassword) { return; }
+	signUp(): void {
+		let signUpSuccess: boolean = true;
+		
+		if (this.password != this.confirmPassword) {
+			alert("Your passwords do no match");
+			return; 
+		}
+
 		this.firebaseService.signUp(this.email, this.password)
 		.then(() => {
 			console.log("Attempting to register a new user");
+			
+			// Give the computer some much needed thinkin time
+			setTimeout(() => {
+				if(signUpSuccess) {
+					this.routerExtensions.navigate([""], {
+						transition: {
+							name: "flip",
+							duration: 10,
+							curve: "linear"
+						}
+					});	
+				}
+			}, 4000);
+			
 		})
 		.catch((message: any) => {
-			alert(message)
+			alert(message);
 		})
 	}
-
+	
 }

@@ -2,14 +2,19 @@
   <Label text="Liszt" class="app-name"></Label>
 
   <TextField hint="Email Address" keyboardType="email"
-    autocorrect="false" autocapitalizationType="none" [(ngModel)] = "email">
+    autocorrect="false" autocapitalizationType="none" [(ngModel)] = "email" keyboardType="email" returnKeyType="next">
   </TextField>
-  <TextField hint="Password" secure="true" [(ngModel)] = "password"></TextField>
-  <TextField hint="Confirm Password" secure="true" [(ngModel)] = "confirmPassword"></TextField>
+
+  <TextField hint="Password" secure="true" [(ngModel)] = "password" returnKeyType="next">
+  </TextField>
+
+  <TextField hint="Confirm Password" secure="true" [(ngModel)] = "confirmPassword" returnKeyType="done">
+  </TextField>
 
   <Button text="Sign up" class="sign-up-button button"
   (tap)="signUp()">
   </Button>
+  
   <Button text="back to login" class="back-to-login-button button"
     [nsRouterLink]="['']">
   </Button>

@@ -1,7 +1,0 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
-<Page.actionBar>
-	<ActionBar title="Pagetest Page" icon="" class="action-bar">
-		</ActionBar>
-	</Page.actionBar>
-	<Label class="pagetest-page" text="Pagetest Page!"/>
-</Page>
