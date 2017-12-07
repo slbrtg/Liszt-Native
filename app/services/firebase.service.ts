@@ -6,8 +6,6 @@ import {Observable} from 'rxjs/Observable';
 import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 import {UtilsService} from './utils.service';
 import 'rxjs/add/operator/share';
-import { RouterExtensions } from "nativescript-angular/router/router-extensions";
-import { Router } from "@angular/router";
 
 @Injectable()
 export class FirebaseService {
@@ -25,8 +23,6 @@ export class FirebaseService {
   constructor(
     private ngZone: NgZone,
     private utils: UtilsService,
-    private router: Router,
-    private routerExtensions: RouterExtensions
   ) {}
 
 	//////////////////////////////////////////////////////////
@@ -45,5 +41,21 @@ export class FirebaseService {
             alert(errorMessage);
           }
       )
-    }
+  }
+
+
+  login(user: User) {
+    return firebase.login({
+      type: firebase.LoginType.PASSWORD,
+      email: user.email,
+      password: user.password
+    }).then((result: any) => {
+          UserAuthService.token = result.uid;
+          return JSON.stringify(result);
+      }, (errorMessage: any) => {
+        alert(errorMessage);
+      });
+  }
+
+  
 }

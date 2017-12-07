@@ -1,6 +1,8 @@
 import { Component, OnInit, ElementRef, ViewChild } from "@angular/core";
 import { Router } from "@angular/router";
 import { Page } from "tns-core-modules/ui/page";
+import { FirebaseService } from "../../services/firebase.service";
+import { User } from "../../models/user.model";
 
 @Component({
 	selector: "login",
@@ -12,23 +14,25 @@ export class LoginComponent implements OnInit {
     //////////////////////////////////////////////////////////
     // UI Elements
     //////////////////////////////////////////////////////////
+    email: string;
+    password: string;
 
-    @ViewChild("container") container: ElementRef;
-    @ViewChild("email") email: ElementRef;
-    @ViewChild("password") password: ElementRef;
-    @ViewChild("confirmPassword") confirmPassword: ElementRef;
+    //////////////////////////////////////////////////////////
+    // Model
+    //////////////////////////////////////////////////////////
+    user = new User();
 
     //////////////////////////////////////////////////////////
     // Constructor
     //////////////////////////////////////////////////////////
-
-    constructor(private router: Router, private page: Page) {
+    constructor(private router: Router, private page: Page,
+    private firebaseService: FirebaseService) {
 
     }
+
     //////////////////////////////////////////////////////////
     // Lifecycle
     //////////////////////////////////////////////////////////
-
     ngOnInit() {
         this.page.actionBarHidden = true;
     }
@@ -36,5 +40,26 @@ export class LoginComponent implements OnInit {
     //////////////////////////////////////////////////////////
     // Login Methods
     //////////////////////////////////////////////////////////
+
+    login() {
+
+        // Commented out error checking for dev purposes
+        
+        // if (this.email == null || this.password == null){
+        //     alert("Please enter your email and password")
+        //     return;
+        // } else {
+            this.user.email = "dog@dog.com";
+            this.user.password = "dogdog";
+        // }
+        this.firebaseService.login(this.user)
+         .then(() => {
+           console.log("Success!!!");
+   
+         })
+         .catch((message:any) => {
+             console.log(message);
+         });
+   }
 
 }
